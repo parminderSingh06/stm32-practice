@@ -29,5 +29,14 @@
 #define LED_PIN (PIN5)
 
 int main(void){
+    RCC_AHB1ENR_R |= (1U << 0);
 
+    GPIOA_MODE_R &= ~(1U << 11);
+    GPIOA_MODE_R |= (1U << 10);
+
+    while(1){
+        GPIOA_OD_R ^= LED_PIN;
+        for (int i = 0; i < 100000; i++){}
+        
+    }
 }
