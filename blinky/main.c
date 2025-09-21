@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 typedef struct 
 {
     volatile uint32_t MODER;    /*offset: 0x00      */
