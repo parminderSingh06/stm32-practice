@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "compilerPath": "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.3 rel1/bin/arm-none-eabi-gcc",
+      "intelliSenseMode": "gcc-arm",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/blinky/chip_headers/CMSIS/Include",
+        "${workspaceFolder}/blinky/chip_headers/CMSIS/Device/ST/STM32F4xx/Include"
+      ],
+      "defines": [
+        "STM32F411xE"   // or your exact MCU define
+      ]
+    }
+  ],
+  "version": 4
+}
